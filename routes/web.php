@@ -38,6 +38,13 @@ Route::get('edit',[HomeController::class,'edit'])->name('edit');
 Route::put('update',[HomeController::class,'update'])->name('update');
 
 
+
+// Route::post('submit',[HomeController::class,'submit'])->name('submit');
+// Route::get('list',[HomeController::class,'list'])->name('list');
+// Route::get('edit',[HomeController::class,'edit'])->name('edit');
+
+// Route::put('update',[HomeController::class,'update'])->name('update');
+
 // });
 
 // });
