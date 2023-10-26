@@ -16,10 +16,10 @@
 
     @include('Frontend.layouts.navbar')
 
-   @yield('main')
+
 
     <!-- Hero Start -->
- <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+ {{-- <div class="container-fluid pt-5 bg-primary hero-header mb-5">
     <div class="container pt-5">
         <div class="row g-5 pt-5">
             <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Hero End -->
 
 
@@ -60,6 +60,35 @@
 <!-- Full Screen Search End -->
 
 @yield('main')
+
+
+
+
+<br>
+<br>
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+<br>
+<br>
+
 
    @include('Frontend.layouts.footer')
 

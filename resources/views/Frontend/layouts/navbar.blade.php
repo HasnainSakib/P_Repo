@@ -3,7 +3,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark p-0">
             <a href="index.html" class="navbar-brand">
-                <h1 class="text-white">AI<span class="text-dark">.</span>Tech</h1>
+                <h1 class="text-white"><span class="text-dark"></span></h1>
             </a>
             <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -33,8 +33,8 @@
                         </div>
                     </div>
                     
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
+                    <a href="{{ route('list') }}" class="nav-item nav-link">List</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="project.html" class="nav-item nav-link">Projects</a>
 

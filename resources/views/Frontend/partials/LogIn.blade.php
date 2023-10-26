@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<title>LogIn Page</title>
+
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -35,15 +37,43 @@
 				<span class="login100-form-title p-b-41">
 					Account Login
 				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5">
+
+{{-- ********************* --}}
+				
+	@if (session()->has('message'))
+	<div class="alert alert-success alert-dismissible fade show" role="alert"
+		id="alert">
+		{{ session()->get('message') }}
+		<button type="button" class="btn-close" data-bs-dismiss="alert"
+			aria-label="Close"></button>
+	</div>
+@endif
+{{-- error message --}}
+@if ($errors->any())
+	<div class="alert alert-danger">
+		<ul>
+			@foreach ($errors->all() as $error)
+				<li>{{ $error }}</li>
+			@endforeach
+		</ul>
+	</div>
+@endif
+{{-- ************** --}}
+
+
+				<form action="{{route('submitLogin') }}" 
+				method="post"
+			
+				 class="login100-form validate-form p-b-33 p-t-5">
+				 @csrf
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="User name">
+						<input class="input100" type="email" name="email" placeholder="User name">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 

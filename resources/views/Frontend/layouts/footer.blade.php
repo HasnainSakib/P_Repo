@@ -1,4 +1,4 @@
- <!-- Footer Start -->
+ {{-- <!-- Footer Start -->
  <div class="container-fluid bg-dark text-white-50 footer pt-5">
     <div class="container py-5">
         <div class="row g-5">
@@ -62,4 +62,4 @@
         </div>
     </div>
 </div>
-<!-- Footer End -->
+<!-- Footer End --> --}}
